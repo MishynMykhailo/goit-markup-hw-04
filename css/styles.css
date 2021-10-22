@@ -322,7 +322,7 @@ li {
   height: 100%;
   background-color: tomato;
   border-radius: 50%;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
