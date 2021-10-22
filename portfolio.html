@@ -23,26 +23,31 @@
             <nav class="nav-sect-hd ">
                 <ul class="list nav-list">
                     <li class="nav-item">
-                        <a href="index.html" class="link-hd">Студия</a>
+                        <a href="index.html" class="link-hd current">Студия</a>
                     </li>
                     <li class="nav-item">
-                        <a href="portfolio.html" class="link-hd current">Портфолио</a>
+                        <a href="portfolio.html" class="link-hd">Портфолио</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="link-hd">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <div class="cont-container">
-                <ul class="list cont-menu-container">
-                    <li class="nav-cont-item">
-                        <a href="mailto:info@devstudio.com" class="link-hd-cont">info@devstudio.com</a>
-                    </li>
-                    <li class="nav-cont-item">
-                        <a href="tel:+380961111111" class="link-hd-cont">+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="list cont-menu-container cont-container">
+                <li class="nav-cont-item">
+                    <a href="mailto:info@devstudio.com" class="link-hd-cont">
+                        <svg class="icon-header" width="16" height="12">
+                            <use href="./images/sprites.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="nav-cont-item">
+                    <a href="tel:+380961111111" class="link-hd-cont">
+                        <svg class="icon-header" width="12" height="16">
+                            <use href="./images/sprites.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </header>
 <!--Центральная секция-->
@@ -146,8 +151,9 @@
     </section>
 </main>
     <!--Футер-->
-    <footer class="footer-sect">
-        <div class="container footer-container">
+<footer class="footer-sect">
+    <div class="container footer-container">
+        <div class="footer-left">
             <a href="./index.html" class="logo-name-ft">
                 <span class="logo-web-ft">Web</span><span>Studio</span>
             </a>
@@ -163,6 +169,40 @@
                 </ul>
             </address>
         </div>
-    </footer>
+        <div class="footer-right">
+            <h2 class="join-title-footer">Присоединяйтесь</h2>
+            <ul class="join-link-list">
+                <li class="join-link-item">
+                    <a href="" target="_blank" class="join-link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprites.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-link-item">
+                    <a href="" target="_blank" class="join-link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprites.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-link-item">
+                    <a href="" target="_blank" class="join-link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprites.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-link-item">
+                    <a href="" target="_blank" class="join-link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprites.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

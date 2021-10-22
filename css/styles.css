@@ -215,11 +215,25 @@ li {
 .list-pre-title::before {
   content: "";
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-  background-size: contain;
-  display:flex
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+.icon-antenna.list-pre-title::before {
+  content: "";
+  background-image: url(../images/Studio/antenna.svg);
+}
+.icon-clock.list-pre-title::before {
+  content: "";
+  background-image: url(../images/Studio/clock.svg);
+}.icon-diagram.list-pre-title::before {
+  content: "";
+  background-image: url(../images/Studio/diagram.svg);
+}.icon-astronaut.list-pre-title::before {
+  content: "";
+  background-image: url(../images/Studio/astronaut.svg);
 }
 .list-pre-title:not(:last-child) {
   margin-right: 30px;
@@ -307,26 +321,80 @@ li {
   display: flex;
   justify-content: center;
 }
-.social-link-item {
+.social-link-item{
   width: 44px;
   height: 44px;
 }
-.social-link {
-  fill: #AFB1B8;
-}
-.social-link-item:not(last-child) {
+.social-link-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+.social-link{
   width: 100%;
   height: 100%;
-  background-color: tomato;
+  display: flex;
   border-radius: 50%;
-  display: block;
   align-items: center;
   justify-content: center;
 }
-
+.social-icon {
+  fill: #AFB1B8
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196F3;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+  background-color: #2196F3;
+}
+/* --------------------------Клиенты--------------------------- */
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item {
+ padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-icon {
+  fill: #AFB1B8;
+}
+.clients-item:hover,.clients-item:focus {
+  border: 1px solid #2196f3;
+}
+.clients-item:hover .clients-icon ,
+.clients-item:focus .clients-icon {
+  fill: #2196f3;
+}
 /*----------------------------Футер----------------------------*/
 .footer-sect {
   background-color: #2f303a;
@@ -368,18 +436,58 @@ li {
 .footer-item-list:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-container {
+  display:flex;
+}
+.footer-left {
+  margin-right: 70px;
+}
+.footer-right {
+}
+.join-title-footer {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+.join-link-list {
+  display: flex;
+  justify-content: center;
+}
+.join-link-item {
+  width: 44px;
+  height: 44px;
+}
+.join-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.join-icon {
+fill: #ffffff;
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: #2196F3;
+}
 /*--------------------------------------------------------ПОРТФОЛИО--------------------------------------------------------*/
 /*Button - Кнопки*/
 .hero-text-portfolio-cont {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.button-filter.current-button {
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 .button-filter-sect {
   display: flex;
   margin-bottom: 50px;
@@ -422,6 +530,11 @@ li {
   flex-basis: calc(100% - 3 * 30px)/30px);
 
   margin-bottom: 30px;
+}
+.gallery-portf-list:hover,.gallery-portf-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .text-filters {
   font-weight: 700;
