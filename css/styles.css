@@ -296,7 +296,7 @@ li {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin-bottom: 16px;
   color: #757575;
 }
 .text-team-cont {
@@ -308,8 +308,11 @@ li {
   justify-content: center;
 }
 .social-link-item {
-   width: 44px;
+  width: 44px;
   height: 44px;
+}
+.social-link {
+  fill: #AFB1B8;
 }
 .social-link-item:not(last-child) {
   margin-right: 10px;
