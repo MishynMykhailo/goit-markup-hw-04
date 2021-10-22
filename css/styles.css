@@ -107,6 +107,10 @@ li {
 .nav-cont-item:not(:last-child) {
   margin-right: 50px;
 }
+.link-hd-cont {
+  display: flex;
+  align-items: center;
+}
 .nav-sect-hd .link-hd,
 .link-hd-cont {
   font-weight: 500;
@@ -140,7 +144,6 @@ li {
 .icon-header {
   fill: #757575;
   margin-right: 10px;
-  align-items: center;
 }
 .link-hd-cont:hover .icon-header,.link-hd-cont:focus .icon-header {
   fill:#2196f3;
