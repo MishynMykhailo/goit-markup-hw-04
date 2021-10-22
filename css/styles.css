@@ -71,7 +71,13 @@ img {
   display: flex;
   align-items: center;
 }
-
+.icon-header {
+  margin-right: 10px;
+  align-items: center;
+}
+.link-hd-cont.icon-header:hover {
+  fill:#2196f3;
+}
 /*----------------------------Лого----------------------------*/
 .title-hd,
 .title-hd-st {
