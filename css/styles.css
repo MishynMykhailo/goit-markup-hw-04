@@ -71,14 +71,7 @@ img {
   display: flex;
   align-items: center;
 }
-.icon-header {
-  fill:red;
-  margin-right: 10px;
-  align-items: center;
-}
-.link-hd-cont.icon-header:hover {
-  fill:#2196f3;
-}
+
 /*----------------------------Лого----------------------------*/
 .title-hd,
 .title-hd-st {
@@ -142,6 +135,14 @@ img {
 .link-hd.current {
   color: #2196f3;
 }
+.icon-header {
+  fill: #757575;
+  margin-right: 10px;
+  align-items: center;
+}
+.link-hd-cont:hover .icon-header,.link-hd-cont:focus .icon-header {
+  fill:#2196f3;
+}
 /*----------------------------Главная Секция----------------------------*/
 .hero-cont {
   max-width: 696px;
@@ -153,6 +154,10 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/Studio/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero-text {
   font-weight: 900;
@@ -204,6 +209,15 @@ img {
 }
 .list-pre-title {
   width: 270px;
+}
+.list-pre-title::before {
+  content: "";
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-size: contain;
+  display:flex
 }
 .list-pre-title:not(:last-child) {
   margin-right: 30px;
